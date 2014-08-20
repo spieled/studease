@@ -1,0 +1,13 @@
+让DJANGO ORM 对应多个结构相同的表，有时候分表是必须的， 
+
+方法1：guoqiang qian <gonefish@gmail.com>提供 
+
+你可以创建几个manager，然后重载manager中的get_query_set方法，对应不同的表 
+
+def get_query_set(self): 
+self.model._meta.db_table = u'foobar' # 对应的表名 
+return super(Table1Manager, self).get_query_set() 
+
+通过修改元信息中的db_table 
+
+代码我已经简单试过，没有什么太大的问题，估计如果是GenericRelation的话，应该会有问题吧 
