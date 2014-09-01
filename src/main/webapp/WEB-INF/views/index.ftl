@@ -2,7 +2,7 @@
 [#import "macro/base.ftl" as base]
 [@base.header/]
 
-<div class="ui-grid-auto">
+<div class="ui-grid-auto" style="height: 1000px;">
 [#if msg ?? ]
     [@base.tipbox msg=msg /]
 [#else]

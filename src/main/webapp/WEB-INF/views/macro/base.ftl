@@ -31,8 +31,7 @@
     <script>var baseurl = "${baseurl}", requestURI = "${request.getRequestURI()}";</script>
 </head>
 <body>
-    [@topnav/]
-<div class="wrapper">
+    [#--[@topnav/]--]
     [@nav /]
     [#if sysMsg ?? ]
         [#if sysMsg ? is_collection]
@@ -49,7 +48,7 @@
 
 
 [#macro topnav]
-    <div class="top-nav">
+    <div class="top-nav full_width" >
         <div class="top-nav-content">
             <div class="wrapper">
                 <div class="fn-right">
@@ -65,13 +64,13 @@
             </div>
         </div>
     </div>
+
 [/#macro]
 
 
 
 
 [#macro footer]
-</div>
 <div class="footer">
     Copyright &copy; ${.now?string("yyyy")} All Rights Reserved.
 </div>
@@ -82,10 +81,11 @@
 
 
 
-
-
 [#macro nav]
-<div class="ui-grid-row mt10">
+<div class="self_bg" style="position: fixed; top:0px;bottom:0px;left:0px;right:0px;">
+    <div style="height: 120px;"></div>
+<div class="wrapper">
+
     <div class="ui-nav">
         <ul class="ui-nav-main">
             [@d_nav]
@@ -105,6 +105,7 @@
         </ul>
         <div class="[#if haveSub]ui-nav-subcontainer[/#if]"></div>
     </div>
+</div>
 </div>
 [/#macro]
 
