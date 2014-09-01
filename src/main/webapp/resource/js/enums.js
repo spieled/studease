@@ -1,0 +1,1 @@
+var enums={"CalendarType":{"LUNAR":"农历","SOLAR":"公历"},"Dir":{"ASC":"从小到大","DESC":"从大到小"},"Gender":{"FEMALE":"女","MALE":"男"},"QueryType":{"CONTAIN":"包含","END_WITH":"结束于","EQUALS":"等于","GREATER_THAN":"大于","GREATER_THAN_OR_EQUALS":"大于等于","LESS_THAN":"小于","LESS_THAN_OR_EQUALS":"小于等于","NOT_EQUALS":"不等于","START_WITH":"开始于"},"SumType":{"COUNT":"计数","NONE":"无","SUM":"求和"}};

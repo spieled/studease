@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.0"
+		 xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+
+	<display-name>cloud-union-platform</display-name>
+
+	<welcome-file-list>
+		<welcome-file>/index.html</welcome-file>
+	</welcome-file-list>
+
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>classpath*:applicationContext.xml</param-value>
+	</context-param>
+
+	<filter>
+		<filter-name>CharacterEncodingFilter</filter-name>
+		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+		<init-param>
+			<param-name>forceEncoding</param-name>
+			<param-value>true</param-value>
+		</init-param>
+	</filter>
+
+
+	<filter>
+		<filter-name>HttpMethodFilter</filter-name>
+		<filter-class>org.springframework.web.filter.HiddenHttpMethodFilter</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>CharacterEncodingFilter</filter-name>
+		<url-pattern>*.htm</url-pattern>
+	</filter-mapping>
+
+	<filter-mapping>
+		<filter-name>HttpMethodFilter</filter-name>
+		<url-pattern>*.htm</url-pattern>
+	</filter-mapping>
+	
+	<listener>
+		<listener-class>org.guzz.web.context.spring.GuzzWithSpringContextLoaderListener</listener-class>
+	</listener>
+
+	<servlet>
+		<servlet-name>dispatch</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>classpath*:dispatcher-servlet.xml</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>dispatch</servlet-name>
+		<url-pattern>*.htm</url-pattern>
+	</servlet-mapping>
+	
+	<session-config>
+		<session-timeout>10</session-timeout>
+		<tracking-mode>COOKIE</tracking-mode>
+	</session-config>
+
+	<!-- 会员云联卡登录的过滤器 -->
+	<filter>
+		<filter-name>Member Filter</filter-name>
+		<filter-class>com.cloudvast.studease.util.filter.MemberFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>Member Filter</filter-name>
+		<url-pattern>/member/*</url-pattern>
+	</filter-mapping>
+
+</web-app>
