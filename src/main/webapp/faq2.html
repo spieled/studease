@@ -13,86 +13,7 @@
     <!-- 可选的Bootstrap主题文件（一般不用引入） -->
     <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 
-    <style>
-
-
-        .flexslider {
-            margin: 50px 0;
-            background: #fff;
-            border: none;
-            position: relative;
-            zoom: 1;
-        }
-
-
-        .slides img {
-            height: 500px;
-        }
-
-        .bottom-pad {
-            margin-bottom: 60px;
-        }
-
-        .recentworks {
-            background: #fafafa;
-            border-top: 1px solid #DDD;
-            border-bottom: 1px solid #DDD;
-            padding: 60px 0;
-            -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-            box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-            background: -webkit-gradient(linear,0% 0%,0% 100%,from(#f8f8f8),to(#fafafa));
-            background: -webkit-linear-gradient(top,#f8f8f8,#fafafa);
-            background: -moz-linear-gradient(top,#f8f8f8,#fafafa);
-            background: -ms-linear-gradient(top,#f8f8f8,#fafafa);
-            background: -o-linear-gradient(top,#f8f8f8,#fafafa);
-        }
-
-        .d2.animate_start {
-            -webkit-animation-delay: 0.4s;
-            animation-delay: 0.4s;
-        }
-        .animate_afc.animate_start {
-            -webkit-animation: 0.8s cubic-bezier(1,0,0,1) 0s normal backwards 1 afc;
-            animation: 0.8s cubic-bezier(1,0,0,1) 0s normal backwards 1 afc;
-            opacity: 1;
-        }
-
-        .portfolio-item {
-            background: url("/img/bg_off.png") repeat;
-            border-radius: 3px;
-            -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-            box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-            border: 1px solid #ddd;
-            padding: 4px;
-            overflow: hidden;
-            display: block;
-        }
-
-        .portfolio-item img {
-            display: block;
-            width: 100%;
-        }
-
-        .portfolio-item-title {
-            text-align: center;
-            padding: 10px 5px 10px 5px;
-            background: #FFF;
-        }
-
-        .bottom-pad-small {
-            margin-bottom: 30px;
-        }
-        .slogan {
-            min-height: 100px;
-            background: #fafafa;
-            width: 100%;
-            border-top: 1px solid #DDD;
-            border-bottom: 1px solid #DDD;
-            -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-            box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-        }
-
-    </style>
+    <link rel="stylesheet" href="/resource/css/style.css">
 
     <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
     <script src="resource/slider/jquery.flexslider.js"></script>
@@ -112,13 +33,7 @@
 <nav id="nav" class="navbar navbar-fixed-top navbar-default" role="navigation">
     <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="/">LiProxy</a>
+            <a class="navbar-brand" href="/">XX汽车生活馆</a>
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -126,7 +41,8 @@
                 <!-- 首页 -->
                 <li><a href="/"><span class="glyphicon glyphicon-home"></span> 首页</a></li>
                 <li><a href="/news/"><span class="glyphicon glyphicon-list"></span> 新闻</a></li>
-                <li><a href="/faq/"><span class="glyphicon glyphicon-question-sign"></span> 帮助</a></li>
+                <li><a href="/product/"><span class="glyphicon glyphicon-list"></span> 产品与服务</a></li>
+                <li><a href="/about/"><span class="glyphicon glyphicon-question-sign"></span> 关于我们</a></li>
 
             </ul>
 
@@ -135,17 +51,9 @@
             <ul id="user_info" class="nav navbar-nav navbar-right">
 
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        <span class="glyphicon glyphicon-user"></span> 472458220@qq.com
-
-                        </span><span class="caret"></span>
+                    <a href="#">
+                        欢迎致电: 18224421156
                     </a>
-                    <ul class="dropdown-menu">
-                        <li><a></a></li>
-                        <li><a href="/reset_pwd/"><span class="glyphicon glyphicon-pencil"></span> 修改密码</a></li>
-                        <li class="divider" />
-                        <li><a href="/logout/"><img src="/static/my/img/logout.png" style="width:18px;height:18px;"> 退出</a></li>
-                    </ul>
                 </li>
 
             </ul>
@@ -175,11 +83,11 @@
             <div class="row">
                 <div class="slogan-content">
                     <div class="col-lg-9 col-md-9">
-                        <h2 class="slogan-title">We design and develop the best website’s for customers!</h2>
+                        <h2 class="slogan-title">竭诚为您提供最尊贵的服务和产品!</h2>
                     </div>
                     <div class="col-lg-3 col-md-3">
                         <div class="get-started">
-                            <button class="btn btn-special btn-color pull-right">Get Started Now</button>
+                            <button class="btn btn-special btn-color pull-right">支持我们</button>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -193,8 +101,10 @@
             <div class="row">
                 <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 animate_afl d1 animate_start">
                     <div class="portfolio-desc">
-                        <h3 class="title">Recent Works</h3>
-                        <p>There are many variations passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even highly believable. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <h3 class="title">新气象</h3>
+                        <p>
+                            梅赛德斯-奔驰（Mercedes-Benz），德国汽车品牌，被认为是世界上最高档汽车品牌之一，其完美的技术水平、过硬的质量标准、推陈出新的创新能力、以及一系列经典轿跑车款式令人称道。在国际上，该品牌通常被简称为梅赛德斯（Mercedes），而中国内地称其为“奔驰”（因此，又有梅赛德斯-奔驰一说），台湾译为“宾士”，香港译为“平治”。
+                        </p>
                         <div class="carousel-controls">
                             <a class="prev" href="#portfolio-carousel" data-slide="prev"><i class="icon-angle-left"></i></a>
                             <a class="next" href="#portfolio-carousel" data-slide="next"><i class="icon-angle-right"></i></a>
@@ -214,9 +124,9 @@
                                                 <span class="fullscreen" style="top: 65%; opacity: 0;"><i class="icon-search"></i></span><img src="img/portfolio/portfolio-1.jpg" alt=" ">
                                             </a>
                                             <div class="portfolio-item-title">
-                                                <a href="single-project.html">Insta Genius</a>
+                                                <a href="single-project.html">保养与维修</a>
                                                 <p>
-                                                    Design / Development
+                                                    高级工程师
                                                 </p>
                                             </div>
                                             <div class="clearfix"></div>
@@ -228,9 +138,9 @@
                                                 <span class="portfolio-item-hover" style="opacity: 0.8;"></span><span class="fullscreen" style="top: 60%; opacity: 1;"><i class="icon-search"></i></span><img src="img/portfolio/portfolio-2.jpg" alt=" ">
                                             </a>
                                             <div class="portfolio-item-title">
-                                                <a href="single-project.html">YA Sound</a>
+                                                <a href="single-project.html">优质配件</a>
                                                 <p>
-                                                    Sound / Audio
+                                                    优质原装配件
                                                 </p>
                                             </div>
                                             <div class="clearfix"></div>
@@ -242,9 +152,9 @@
                                                 <span class="portfolio-item-hover" style="opacity: 0;"></span><span class="fullscreen" style="top: 65%; opacity: 0;"><i class="icon-search"></i></span><img src="img/portfolio/portfolio-3.jpg" alt=" ">
                                             </a>
                                             <div class="portfolio-item-title">
-                                                <a href="single-project.html">Nike Shoe</a>
+                                                <a href="single-project.html">华丽装饰</a>
                                                 <p>
-                                                    Apareal / Shoe
+                                                    最有品位的装饰
                                                 </p>
                                             </div>
                                             <div class="clearfix"></div>
@@ -304,6 +214,19 @@
         </div>
     </div>
 
+<nav id="nav-footer" class="navbar navbar-fixed-bottom navbar-inverse" role="navigation">
+    <div class="container">
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav" style="color: #f5f5f5">
+                <li><a href="">&copy; 2014 版权所有 违版必究.</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li> <a href="#">地址: 四川省成都市高新区天府二街189号</a> </li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
 
 </body>
 </html>
