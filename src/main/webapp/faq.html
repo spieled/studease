@@ -1,0 +1,233 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FAQ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <style type="text/css">
+        body{
+            /*background: url("/static/my/img/bg/8.jpg");		*/
+            position: relative;
+        }
+
+        .ok{
+            color: green;
+        }
+
+        .err{
+            color: red;
+        }
+
+        .badge-danger{
+            color: white;
+            background: red;
+        }
+
+        .badge-success{
+            color: white;
+            background: green;
+        }
+
+        #left-bar{
+            margin-top: 85px;
+        }
+
+        .section{
+            padding-top: 60px;
+        }
+
+        #content h1{
+            padding-bottom: 9px;
+            border-bottom: 1px solid #000000;
+        }
+
+        #content pre,#content p{
+            font-size: 18px;
+            margin: 0 0 10px;
+        }
+
+        #content .img_div{
+            margin-bottom: 30px;
+        }
+
+        .bs-docs-example {
+            position: relative;
+            margin: 15px 0;
+            padding: 39px 19px 14px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+        }
+
+        .bs-docs-example:after {
+            content: "Example";
+            position: absolute;
+            top: -1px;
+            left: -1px;
+            padding: 3px 7px;
+            font-size: 12px;
+            font-weight: bold;
+            background-color: #f5f5f5;
+            border: 1px solid #ddd;
+            color: #9da0a4;
+            -webkit-border-radius: 4px 0 4px 0;
+            -moz-border-radius: 4px 0 4px 0;
+            border-radius: 4px 0 4px 0;
+        }
+
+        .bs-docs-example>.dropdown>.dropdown-menu {
+            position: static;
+            display: block;
+            margin-bottom: 5px;
+            clear: left;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="jumbotron">
+    <div class="container">
+        <img src="slider-bg-1.jpg">
+    </div>
+</div>
+<!-- 导航条 -->
+<nav id="nav" class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">LiProxy</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-left">
+                <!-- 首页 -->
+                <li><a href="/"><span class="glyphicon glyphicon-home"></span> 首页</a></li>
+                <li><a href="/news/"><span class="glyphicon glyphicon-list"></span> 新闻</a></li>
+                <li><a href="/faq/"><span class="glyphicon glyphicon-question-sign"></span> 帮助</a></li>
+
+            </ul>
+
+
+            <!-- 账号 -->
+            <ul id="user_info" class="nav navbar-nav navbar-right">
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <span class="glyphicon glyphicon-user"></span> 472458220@qq.com
+
+                        </span><span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a></a></li>
+                        <li><a href="/reset_pwd/"><span class="glyphicon glyphicon-pencil"></span> 修改密码</a></li>
+                        <li class="divider" />
+                        <li><a href="/logout/"><img src="/static/my/img/logout.png" style="width:18px;height:18px;"> 退出</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<div class="container" style="margin-top: 51px;padding-top: 20px;">
+
+    <div class="row">
+        <div class="col-md-3">
+            <div id="left-bar" class="hidden-xs hidden-sm" data-spy="affix" data-offset-top="60">
+                <div class="list-group">
+                    <a class="list-group-item" href="#"><b style="font-size:18px;">常见问题回答(FAQ)：</b></a>
+                    <a class="list-group-item" href="#no_mail"><span class="glyphicon glyphicon-chevron-right pull-right"></span> 注册时收不到验证邮件</a>
+                    <a class="list-group-item" href="#clash"><span class="glyphicon glyphicon-chevron-right pull-right"></span> 插件冲突</a>
+                    <a class="list-group-item" href="#auto_disab"><span class="glyphicon glyphicon-chevron-right pull-right"></span> Windows下LiPrxoxy被自动禁用</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="content" class="col-md-9">
+            <div class="section" id="clash">
+                <h1>注册时收不到验证邮件</h1>
+                <p>1.请尽量使用QQ、163邮箱注册，新浪邮箱可能会收不到验证邮件。</p>
+                <p>2.请检查您邮箱的垃圾箱。</p>
+                <p>3.请检查邮箱填写是否正确，字母最好都小写。</p>
+            </div>
+
+            <div class="section" id="clash">
+                <h1>插件冲突</h1>
+                <p>LiProxy与以下Chrome插件有冲突，请禁用以下插件后使用LiPrxoy</p>
+                <p>优酷去广告插件</p>
+                <div class="img_div"><img class="img-responsive" src="/static/my/img/zh-cn/clash_1.jpg"></div>
+            </div>
+
+            <div class="section" id="auto_disab">
+                <h1>Windows下LiProxy被自动禁用</h1>
+                <p>如果您的LiProxy扩展已经被Chrome自动禁用，并且重装也无效，Chrome提示如下：</p>
+                <div class="img_div"><img class="img-responsive" src="/static/my/img/zh-cn/htu_w7_C_5.jpg"></div>
+                <p>请按以下步骤操作，以解决该问题：</p>
+                <p>第一步：在Chrome中卸载LiProxy扩展</p>
+                <div class="img_div"><img class="img-responsive" src="/static/my/img/zh-cn/faq_auto_dis1.jpg"></div>
+                <p>第二步：在Chrome中设置代理</p>
+                <div class="img_div"><img class="img-responsive" style="border:1px solid black;" src="/static/my/img/zh-cn/faq_auto_dis2.jpg"></div>
+                <div class="img_div"><img class="img-responsive" style="border:1px solid black;" src="/static/my/img/zh-cn/faq_auto_dis3.jpg"></div>
+                <div class="img_div"><img class="img-responsive" style="border:1px solid black;" src="/static/my/img/zh-cn/faq_auto_dis4.jpg"></div>
+                <div class="img_div"><img class="img-responsive" style="border:1px solid black;" src="/static/my/img/zh-cn/faq_auto_dis5.jpg"></div>
+                <div class="img_div"><img class="img-responsive" style="border:1px solid black;" src="/static/my/img/zh-cn/faq_auto_dis6.jpg"></div>
+                <p>第三步：从Chrome网上应用店中安装LiProxy扩展<a target="_blank" class="btn btn-primary btn-lg" href="https://chrome.google.com/webstore/detail/liproxy/baaclllfceolpgfimibgppgeojbeebcd?authuser=1">点击在Chrome网上应用店打开LiProxy安装页面</a></p>
+                <div class="img_div"><img class="img-responsive" src="/static/my/img/zh-cn/htu_w7_C_2.jpg"></div>
+                <p>第四步：关闭之前设置的代理</p>
+                <div class="img_div"><img class="img-responsive" src="/static/my/img/zh-cn/faq_auto_dis7.jpg"></div>
+                <p>第五步：启动LiProxy</p>
+                <div class="img_div"><img class="img-responsive" src="/static/my/img/zh-cn/htu_w7_C.jpg"></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div id="foot" style="height:100px;"></div>
+<!-- js -->
+<script src="/static/jquery/jquery-1.11.1.min.js"></script>
+<script src="/static/bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+    $(".submit_lang").click(function(){
+        $("#set_lang").find("[name$='language']").val($(this).attr("lang"));
+        $("#set_lang").submit();
+    });
+    msieversion();
+    function msieversion() {
+        var ua = window.navigator.userAgent;
+        var msie = ua.indexOf("MSIE ");
+
+        if (msie > 0)      // If Internet Explorer, return version number
+        //alert(parseInt(ua.substring(msie + 5, ua.indexOf(".", msie))));
+            window.location.href="/no_ie/"
+        return false;
+    }
+
+
+</script>
+<input type='hidden' name='csrfmiddlewaretoken' value='7OrV6Qa1QNkHccml7g9L8eI0MQS6IK4x' />
+<div style=”display:none;”>
+    <!-- 百度统计 -->
+    <script type="text/javascript">
+        var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+        document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F4f6316b51ff72e7f4426f1d60f6842c4' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+</div>
+</body>
+</html>

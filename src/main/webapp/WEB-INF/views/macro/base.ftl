@@ -82,9 +82,8 @@
 
 
 [#macro nav]
-<div class="self_bg" style="position: fixed; top:0px;bottom:0px;left:0px;right:0px;">
-    <div style="height: 120px;"></div>
-<div class="wrapper">
+<div class="ui-nav-fixed full_width">
+    <div class="fn-wrapper">
 
     <div class="ui-nav">
         <ul class="ui-nav-main">
