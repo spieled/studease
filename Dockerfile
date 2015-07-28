@@ -1,6 +1,6 @@
 #FROM ubuntu:trusty
 FROM daocloud.io/ubuntu:14.04
-MAINTAINER Zhengwei <wei.zheng@56qq.cn>
+MAINTAINER shaoping.liu <spieled916@gmail.com>
 RUN sed -i 's/archive.ubuntu/mirrors.163/g' /etc/apt/sources.list
 RUN sed -i 's/us\.archive\.ubuntu\.com/mirrors.163.com/g' /etc/apt/sources.list
 RUN apt-get update  && apt-get install wget -y
@@ -31,6 +31,8 @@ RUN wget -q https://raw.githubusercontent.com/spieled/soft/master/start.sh
 RUN chmod +x start.sh
 RUN rm -rf tomcat7.63.tgz
 RUN rm -rf tomcat-apr_new.tgz
+
+ADD ./catalina.sh /tomcat7/bin/catalina.sh
 
 EXPOSE 8080
 CMD /start.sh && sleep 5 && tail -f /tomcat7/logs/catalina.out 
